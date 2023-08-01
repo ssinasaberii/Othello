@@ -1,5 +1,6 @@
 #include <iostream>
 #include <math.h>
+#include <string.h>
 #include <stdlib.h>
 #include <iomanip>
 #include <stdio.h>
@@ -32,64 +33,55 @@ int game(int,int);
 int main()
 {
 	menu();
-	int a,b=8,i,d,e,k;
+	int a,b=8,i,d,e;
 	char c[10]={'\0'};
-	for(k = 0; k <= 100; k++)
+	cin >> a;
+	if (a == 2)
 	{
-		cin >> a;
-		if (a == 2)
+		for (i = 0; i <= 100; i++)
 		{
-			for (i = 0; i <= 100; i++)
+			size();
+			fflush(stdin);
+			b=char_to_num();
+			if (b % 2 == 0 && b >= 4 && b <= 20)
 			{
-				size();
-				fflush(stdin);
-				b = char_to_num();
-				if (b % 2 == 0 && b >= 4 && b <= 20)
-				{
-					cout << "GOOD CHOICE!" << "\n";
-					menu();
-					cin >> a;
-					if (a == 2)
-						continue;
-					else
-						break;
-				}
-				else
-				{
-					invalid();
+				cout<< "GOOD CHOICE!"<<"\n";
+				menu();
+				cin >> a;
+				if (a == 2)
 					continue;
-				}
+				else
+				    break;
 			}
-		}
-		if (a == 1)
-		{
-			system("cls");
-			cout << "Choose game mode:" << "\n" << "1-Player vs Player" << "\n" << "2-Player vs Computer" << "\n";
-			cin >> d;
-			system("cls");
-			if (d == 2)
+			else
 			{
-				cout << "1-Easy" << "\n" << "2-Normal" << "\n";
-				cin >> e;
-				if (e == 2)
-				{
-					cout << "COMING SOON...";
-					return 0;
-				}
+			    invalid();
+				continue;
 			}
-			game(b, d);
-		}
-		if (a == 3)
-		{ 
-			system("pause");
-			return 0;
-		}
-		if(a>3 || a<1)
-		{
-			cout << "invalid input! ";
-			continue;
 		}
 	}
+	if (a == 1)
+	{
+		system("cls");
+		cout << "Choose game mode:" << "\n" << "1-Player vs Player" << "\n" << "2-Player vs Computer"<<"\n";
+		cin >> d;
+		system("cls");
+		if (d == 2)
+		{
+			cout << "1-Easy" << "\n" << "2-Normal" << "\n";
+			cin >> e;
+			if (e == 2)
+			{
+				cout << "COMING SOON...";
+				return 0;
+			}
+		}
+		game(b,d);
+	}
+	if (a == 3)
+		return 0;
+	system("pause");
+	return 0;
 }
 void menu()
 {
