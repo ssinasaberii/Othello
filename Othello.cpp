@@ -335,7 +335,7 @@ int show_states(int turn,char a[20][20],int size)
 							m++;
 						}
 						flag = 0;
-					}//cout << "(" << i + 1 << "," << j - 1 << ")" << " ";
+					}
 					if (check_okw(i, j - 1, a, size) == 1 && a[i][j - 1] == '-' && (i) >= 0 && (i) < size && (j - 1) >= 0 && (j - 1) < size)
 					{
 						for (n = 0; n < m; n++)
@@ -350,7 +350,7 @@ int show_states(int turn,char a[20][20],int size)
 							m++;
 						}
 						flag = 0;
-					}//cout << "(" << i << "," << j - 1 << ")" << " ";
+					}
 					if(check_okw(i-1, j-1, a, size)==1 && a[i - 1][j - 1] == '-' && (i - 1) >= 0 && (i - 1) < size && (j - 1) >= 0 && (j - 1) < size)
 					{
 						for (n = 0; n < m; n++)
@@ -365,7 +365,7 @@ int show_states(int turn,char a[20][20],int size)
 							m++;
 						}
 						flag = 0;
-					}//cout << "(" << i - 1 << "," << j - 1 << ")" << " ";
+					}
 					if(check_okw(i-1, j, a, size)==1 && a[i - 1][j] == '-' && (i - 1) >= 0 && (i - 1) < size && (j) >= 0 && (j) < size)
 					{
 						for (n = 0; n < m; n++)
@@ -380,7 +380,7 @@ int show_states(int turn,char a[20][20],int size)
 							m++;
 						}
 						flag = 0;
-					}//cout << "(" << i - 1 << "," << j << ")" << " ";
+					}
 					if(check_okw(i-1, j+1, a, size)==1 && a[i - 1][j + 1] == '-' && (i - 1) >= 0 && (i - 1) < size && (j + 1) >= 0 && (j + 1) < size)
 					{
 						for (n = 0; n < m; n++)
@@ -395,7 +395,7 @@ int show_states(int turn,char a[20][20],int size)
 							m++;
 						}
 						flag = 0;
-					}//cout << "(" << i - 1 << "," << j + 1 << ")" << " ";
+					}
 					if(check_okw(i, j+1, a, size)==1 && a[i ][j + 1] == '-' && (i) >= 0 && (i) < size && (j + 1) >= 0 && (j + 1) < size)
 					{
 						for (n = 0; n < m; n++)
@@ -410,7 +410,7 @@ int show_states(int turn,char a[20][20],int size)
 							m++;
 						}
 						flag = 0;
-					}//cout << "(" << i << "," << j + 1 << ")" << " ";
+					}
 					if(check_okw(i+1, j+1, a, size)==1 && a[i + 1][j + 1] == '-' && (i + 1) >= 0 && (i + 1) < size && (j + 1) >= 0 && (j + 1) < size)
 					{
 						for (n = 0; n < m; n++)
@@ -425,7 +425,7 @@ int show_states(int turn,char a[20][20],int size)
 							m++;
 						}
 						flag = 0;
-					}//cout << "(" << i + 1 << "," << j + 1 << ")" << " ";
+					}
 					if(check_okw(i+1, j, a, size)==1 && a[i + 1][j ] == '-' && (i + 1) >= 0 && (i + 1) < size && (j) >= 0 && (j) < size)
 					{
 						for (n = 0; n < m; n++)
@@ -440,7 +440,7 @@ int show_states(int turn,char a[20][20],int size)
 							m++;
 						}
 						flag = 0;
-					}//cout << "(" << i + 1 << "," << j << ")" << " ";
+					}
 				}
 			}
 	}
@@ -465,7 +465,7 @@ int show_states(int turn,char a[20][20],int size)
 							m++;
 						}
 						flag = 0;
-					}//cout << "(" << i + 1 << "," << j - 1 << ")" << " ";
+					}
 					if (check_okb(i, j - 1, a, size) == 1 && a[i][j - 1] == '-' && (i) >= 0 && (i) < size && (j - 1) >= 0 && (j - 1) < size)
 					{
 						for (n = 0; n < m; n++)
@@ -480,7 +480,7 @@ int show_states(int turn,char a[20][20],int size)
 							m++;
 						}
 						flag = 0;
-					}//cout << "(" << i << "," << j - 1 << ")" << " ";
+					}
 					if (check_okb(i - 1, j - 1, a, size) == 1 && a[i - 1][j - 1] == '-' && (i - 1) >= 0 && (i - 1) < size && (j - 1) >= 0 && (j - 1) < size)
 					{
 						for (n = 0; n < m; n++)
@@ -495,7 +495,7 @@ int show_states(int turn,char a[20][20],int size)
 							m++;
 						}
 						flag = 0;
-					}//cout << "(" << i - 1 << "," << j - 1 << ")" << " ";
+					}
 					if (check_okb(i - 1, j, a, size) == 1 && a[i - 1][j] == '-' && (i - 1) >= 0 && (i - 1) < size && (j) >= 0 && (j) < size)
 					{
 						for (n = 0; n < m; n++)
@@ -510,7 +510,7 @@ int show_states(int turn,char a[20][20],int size)
 							m++;
 						}
 						flag = 0;
-					}//cout << "(" << i - 1 << "," << j << ")" << " ";
+					}
 					if (check_okb(i - 1, j + 1, a, size) == 1 && a[i - 1][j + 1] == '-' && (i - 1) >= 0 && (i - 1) < size && (j + 1) >= 0 && (j + 1) < size)
 					{
 						for (n = 0; n < m; n++)
@@ -525,7 +525,7 @@ int show_states(int turn,char a[20][20],int size)
 							m++;
 						}
 						flag = 0;
-					}//cout << "(" << i - 1 << "," << j + 1 << ")" << " ";
+					}
 					if (check_okb(i, j + 1, a, size) == 1 && a[i][j + 1] == '-' && (i) >= 0 && (i) < size && (j + 1) >= 0 && (j + 1) < size)
 					{
 						for (n = 0; n < m; n++)
@@ -540,7 +540,7 @@ int show_states(int turn,char a[20][20],int size)
 							m++;
 						}
 						flag = 0;
-					}//cout << "(" << i << "," << j + 1 << ")" << " ";
+					}
 					if (check_okb(i + 1, j + 1, a, size) == 1 && a[i + 1][j + 1] == '-' && (i + 1) >= 0 && (i + 1) < size && (j + 1) >= 0 && (j + 1) < size)
 					{
 						for (n = 0; n < m; n++)
@@ -555,7 +555,7 @@ int show_states(int turn,char a[20][20],int size)
 							m++;
 						}
 						flag = 0;
-					}//cout << "(" << i + 1 << "," << j + 1 << ")" << " ";
+					}
 					if (check_okb(i + 1, j, a, size) == 1 && a[i + 1][j] == '-' && (i + 1) >= 0 && (i + 1) < size && (j) >= 0 && (j) < size)
 					{
 						for (n = 0; n < m; n++)
@@ -570,7 +570,7 @@ int show_states(int turn,char a[20][20],int size)
 							m++;
 						}
 						flag = 0;
-					}//cout << "(" << i + 1 << "," << j << ")" << " ";
+					}
 				}
 			}
 	}
@@ -597,7 +597,7 @@ int show_states(int turn,char a[20][20],int size)
 char flip(char a[20][20], int x, int y, int turn,int size)
 {
 	int i, j;
-	if (turn == 1) //tabdile 'b' be 'w'
+	if (turn == 1) 
 	{
 		for (i = x - 1, j = y; i >= 0; i--)
 		{
@@ -712,7 +712,7 @@ char flip(char a[20][20], int x, int y, int turn,int size)
 				break;
 		}
 	}
-	if (turn == 2) //tabdile 'w' be 'b'
+	if (turn == 2) 
 	{
 		for (i = x - 1, j = y; i >= 0; i--)
 		{
